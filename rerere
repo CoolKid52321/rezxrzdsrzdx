@@ -49,10 +49,10 @@ local sections = {}
 --local themes = {}
 local theme = {
     accent = Color3.fromRGB(11, 146, 0),
-    light_contrast = Color3.fromRGB(59, 71, 58),
-    dark_contrast = Color3.fromRGB(45, 51, 45),
+    light_contrast = Color3.fromRGB(74, 107, 74),
+    dark_contrast = Color3.fromRGB(42, 43, 42),
     outline = Color3.fromRGB(0, 0, 0),
-    inline = Color3.fromRGB(11, 146, 0),
+    inline = Color3.fromRGB(50, 50, 50),
     textcolor = Color3.fromRGB(255, 255, 255),
     textborder = Color3.fromRGB(0, 0, 0),
     cursoroutline = Color3.fromRGB(10, 10, 10),
@@ -602,7 +602,7 @@ do
             window.watermark = {visible = true}
             --
             local info = info or {}
-            local watermark_name = info.name or info.Name or info.title or info.Title or string.format("$$ Splix || uid : %u || ping : %u || fps : %u", 1, 100, 200)
+            local watermark_name = info.name or info.Name or info.title or info.Title or string.format("LuckyHub | Ping : %u || FPS : %u", 1, 100, 200)
             --
             local text_bounds = utility:GetTextBounds(watermark_name, theme.textsize, theme.font)
             --
@@ -736,7 +736,7 @@ do
             })
             --
             local keybindslist_title = utility:Create("TextLabel", {Vector2.new(keybindslist_outline.Size.X/2,4), keybindslist_outline}, {
-                Text = "- Keybinds -",
+                Text = " Keybinds ",
                 Size = theme.textsize,
                 Font = theme.font,
                 Color = theme.textcolor,
