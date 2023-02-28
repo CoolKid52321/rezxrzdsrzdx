@@ -48,11 +48,11 @@ local sections = {}
 -- Theme Variables
 --local themes = {}
 local theme = {
-    accent = Color3.fromRGB(0, 215, 35),
+    accent = Color3.fromRGB(11, 146, 0),
     light_contrast = Color3.fromRGB(59, 71, 58),
     dark_contrast = Color3.fromRGB(45, 51, 45),
     outline = Color3.fromRGB(0, 0, 0),
-    inline = Color3.fromRGB(50, 50, 50),
+    inline = Color3.fromRGB(11, 146, 0),
     textcolor = Color3.fromRGB(255, 255, 255),
     textborder = Color3.fromRGB(0, 0, 0),
     cursoroutline = Color3.fromRGB(10, 10, 10),
@@ -599,7 +599,7 @@ do
         end
         --
         function window:Watermark(info)
-            window.watermark = {visible = false}
+            window.watermark = {visible = true}
             --
             local info = info or {}
             local watermark_name = info.name or info.Name or info.title or info.Title or string.format("$$ Splix || uid : %u || ping : %u || fps : %u", 1, 100, 200)
@@ -695,7 +695,7 @@ do
         end
         --
         function window:KeybindsList(info)
-            window.keybindslist = {visible = false, keybinds = {}}
+            window.keybindslist = {visible = true, keybinds = {}}
             --
             local info = info or {}
             --
